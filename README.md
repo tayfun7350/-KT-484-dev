@@ -1,2 +1,2 @@
-# -KT-484-dev
+# -İKT-484-ödev
 Ödevlerimi buraya yüklemekteyim.

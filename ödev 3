@@ -1,0 +1,15 @@
+ Bu ödevde, futbol takımlarının sezon ortası performans verileri kullanılarak sezon sonu performanslarının Lineer Ayrım Analizi (LDA) algoritması ile sınıflandırılması amaçlanmıştır. Geçmiş sezonlara ait veriler üzerinde eğitilen bir LDA modeli, mevcut sezonun ara dönem verilerini kullanarak takımların olası sezon sonu performans kategorilerini (Şampiyon, Avrupa, Alt) tahmin etmek için kullanılmıştır. Elde edilen sonuçlar analiz edilmiş, performans metriklerinin önemi vurgulanmış, ilgili hipotezler sunulmuş ve farklı bilgi temsil biçimleri (taksonomi ve ontoloji) bağlamında değerlendirme yapılmıştır. Ayrıca, kümeleme algoritmaları ile olası karşılaştırmalar da tartışılmıştır.
+
+Sayın Hocam,
+
+Ekte sunulan bu ödevde, futbol takımlarının sezon sonu performanslarının tahmin edilmesinde Lineer Ayrım Analizi (LDA) algoritmasının uygulanması ve sonuçlarının değerlendirilmesi amaçlanmıştır. Amaç, sezon ortası istatistiksel verilerinin, takımların nihai başarı düzeylerini sınıflandırmada ne kadar etkili bir şekilde kullanılabileceğini araştırmaktır.
+
+Ödevin ilk bölümünde, geçmiş sezonlara ait futbol ligi verileri (sezonun belirli bir haftasına ait puan ve galibiyet gibi temel istatistikler) toplanmış ve bu verilere karşılık gelen sezon sonu performans etiketleri (Şampiyon, Avrupa kupalarına katılanlar, küme düşenler gibi kategoriler) belirlenmiştir. İkinci bölümde, bu etiketli veri seti kullanılarak bir LDA modeli eğitilmiştir. Eğitilen model, mevcut sezonun aynı haftasına ait verileri kullanarak takımların olası sezon sonu performans kategorilerini tahmin etmek için kullanılmıştır.
+
+Ödevin devamında, LDA modelinin tahmin sonuçları detaylı bir şekilde analiz edilmiş ve yanlış sınıflandırmalar üzerinde durulmuştur. Sınıf dağılımlarının dengesizliğinin model performansı üzerindeki potansiyel etkileri tartışılmış ve sınıflandırma performansını değerlendirmede kullanılan temel metrikler (Gerçek Pozitif, Gerçek Negatif, Yanlış Pozitif, Yanlış Negatif) açıklanmıştır. LDA'nın bu bağlamdaki genel güvenilirliği değerlendirilmiş ve sezon ortası verileriyle sezon sonu sınıflandırması yapmaya yönelik sıfır ve alternatif hipotezler sunulmuştur. Ayrıca, kullanılan performans etiketlerinin taksonomik ve ontolojik açıdan nasıl değerlendirilebileceği ve farklı bilgi temsil yöntemleriyle karşılaştırılması yapılmıştır. Son olarak, denetimsiz öğrenme yöntemlerinden olan kümeleme algoritmalarının aynı veri üzerinde nasıl bir gruplama ortaya çıkarabileceği ve denetimli öğrenme ile arasındaki farklar tartışılmıştır.
+
+Bu çalışma, futbol takımlarının sezon ortası performans verilerinin analizinde LDA algoritmasının potansiyelini göstermekte ve sınıflandırma problemlerine yönelik farklı yaklaşımların karşılaştırılmasına olanak tanımaktadır.
+
+Saygılarımla,
+tayfun melen 
+21232910059

@@ -1,0 +1,9 @@
+Merhaba hocam bir kNN modeli oluşturma ödevini yapmış durumdayım. Kaynağım gemini oldu yazdığım kod aşşadadır. Başka bir yol ile yapamazdım.
+
+
+test_predictions = knn_model.predict(X_test)
+test_accuracy = accuracy_score(y_test, test_predictions)
+
+print(f"Test kümesi doğruluğu (ilk model): {test_accuracy:.4f}")
+print("\nSınıflandırma Raporu (Test Kümesi):")
+print(classification_report(y_test, test_predictions, target_names=iris.target_names))

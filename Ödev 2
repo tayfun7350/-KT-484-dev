@@ -1,0 +1,57 @@
+İKT 484 Bahar 2025 – Ödev 2
+
+Adı Soyadı: Tayfun Melen
+Numarası: 21232910059
+Teslim Tarihi: 21.05.2025
+
+Amaç
+Sınıflandırma algoritmalarının analizi, tasarımı ve uygulanması konusunda deneyim elde etmek.
+
+1. Kavramsallaştırma: Harf Notları ile Sınıflandırma
+Bir üniversitedeki dersin harf notlarını öğrencileri değişik başarı sınıflarına ayırmak olarak değerlendirirsek, dersteki bütün ölçme ve değerlendirme faaliyetleri bir bütün olarak bir sınıflandırıcı olmaktadır. Bu sistemde kullanılan harf notları (AA, BA, BB…) öğrencilerin başarı düzeylerini temsil eder. Bu yapı, sınıflandırma algoritmalarında kullanılan sınıf etiketleri gibi düşünülebilir. Bu nedenle harf notlarıyla yapılan başarı değerlendirmesi kavramsal olarak sınıflandırma ile örtüşmektedir.
+
+2. Harf Aralıkları ve Hassaslık Algısı Üzerine Görüşler
+Bazı üniversitelerde kullanılan ara harfler (BA, CB gibi) ve daha hassas harf aralıkları (A-, B+, B-, C+ gibi) öğrenci başarısını daha detaylı göstermeyi amaçlar. Ancak bu detaylı yapının öğrenciler ve öğretim üyeleri tarafından nasıl algılandığını anlamak adına 2 öğretim üyesi ve 5 öğrenci ile görüşme yapılmıştır.
+
+Görüşmelerden Öne Çıkanlar:
+
+Öğrenciler, küçük farklarla farklı harf notu almanın moral bozucu olabileceğini, bazen adaletsizlik hissi yarattığını belirtmiştir.
+
+Öğretim üyeleri, hassas aralıkların öğrenci başarısını daha ayrıntılı ayırabildiğini, ancak sistemin karmaşık algılanabileceğini söylemiştir.
+
+Sonuç: Harf aralıklarının hassaslığı, değerlendirme sisteminin doğruluğunu artırabilir ancak algılanan adalet ve anlaşılırlık düzeyini düşürebilir.
+
+3. Üçlü Not Sınıflandırması Üzerine Değerlendirme
+Harf notlarının Üstün Başarılı (A), Başarılı (B–D) ve Başarısız (FD, FF) olarak üç kategoriye ayrılması, daha basit ve anlaşılır bir sınıflandırma sağlayabilir. Bu sınıflandırma, hem öğrenciler hem de analiz algoritmaları için daha sade bir yapı sunarak daha doğru analizlere olanak tanıyabilir. Özellikle karar verme süreçlerinde yorumlaması daha kolay olabilir.
+
+4. k-NN Algoritması ile Uygulama
+4.1. Sınıflandırma Kuralları
+Notları aşağıdaki şekilde etiketledik:
+
+100–85 → Üstün Başarılı
+
+84–55 → Başarılı
+
+54 ve altı → Başarısız
+
+Bu kurallar, orijinal veriyi sınıflandırmak için temel alınmıştır.
+
+4.2. Öğrenme Verisinin Seçilmesi
+Verilen veri seti içerisinden rastgele %70 oranında bir alt küme eğitim verisi (train set) olarak seçilmiştir. Kalan %30’luk veri test verisi olarak kullanılmıştır. Seçim için basit rastgele örneklem metodu kullanılmıştır. Seçilen yöntemin k-NN algoritmasının doğruluğu üzerindeki etkisi, örneklemin veriyi ne kadar iyi temsil ettiğine bağlıdır.
+
+4.3. k-NN Parametreleri ve Mesafe Ölçütü
+k-NN algoritmasında:
+
+k değeri: 3 (komşu sayısı)
+
+Mesafe ölçütü: Öklid mesafesi
+
+Kullanılan değişken: Dönem sonu toplam puanı (tek boyutlu anali
+
+Alternatif olarak çok boyutlu veri (vize, proje, dönem sonu) kullanılması durumunda yine Öklid veya Manhattan mesafesiyle daha detaylı sınıflandırmalar yapılabilir.
+
+4.4. Modelin Eğitilmesi ve Sınıflandırma
+Seçilen öğrenme verisi ile model eğitilmiş ve kalan test verisi başarı kategorilerine göre yeniden sınıflandırılmıştır. Bu süreçte algoritmanın doğruluğu ölçülerek modelin genel performansı değerlendirilmiştir.
+
+Sonuç
+Bu çalışma sonucunda, harf notlarının sınıflandırma problemlerine benzetilebileceği ve basit sınıflandırma algoritmalarının (k-NN gibi) bu tür verilerde uygulanabilir olduğu görülmüştür. Ara notlar gibi detayların değerlendirme sürecini karmaşıklaştırabileceği ancak algoritmik analiz için uygun sadeleştirmelerin yapılabileceği sonucuna varılmıştır.

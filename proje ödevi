@@ -1,0 +1,129 @@
+İKT-484 Proje 2: Harcama Limitleri
+Adı Soyadı: Tayfun Melen
+Öğrenci No: 21232910059
+Ders: İKT-484 – Veri Madenciliği
+Üniversite: Atılım Üniversitesi
+Proje Başlığı: TFF Harcama Limitlerinin Regresyon ve Senaryo Bazlı Analizi
+
+Proje Amacı
+Bu çalışmanın amacı, Türkiye Futbol Federasyonu’nun (TFF) Süper Lig kulüpleri için belirlediği harcama limitlerinin hangi finansal ve sportif verilerle ilişkili olduğunu analiz etmek, bu ilişkilere dayanarak regresyon modelleri kurmak ve 2025 yılı için farklı senaryolara göre tahminler üretmektir.
+
+
+Veri Seti ve Girdiler
+2020–2024 dönemini kapsayan veri setinde aşağıdaki değişkenler yer almaktadır:
+
+Kulüp adı
+
+Yıl
+
+Gelir (milyon TL)
+
+Gider (milyon TL)
+
+Sponsorluk geliri (milyon TL)
+
+Transfer geliri (milyon TL)
+
+Transfer gideri (milyon TL)
+
+Borç (milyon TL)
+
+Sportif başarı (puan skalasında 0–100 arası)
+
+TFF tarafından belirlenen harcama limiti (milyon TL)
+
+Verilerde eksik ve uyumsuzluklar bulunmamaktadır.
+
+Regresyon Modeli
+Lineer regresyon modeli, harcama limiti değişkenini (bağımlı) aşağıdaki bağımsız değişkenlere göre tahmin etmek üzere kurulmuştur:
+
+Gelir
+
+Gider
+
+Sponsorluk
+
+Transfer geliri ve gideri
+
+Borç
+
+Sportif başarı puanı
+
+Modelin eğitimi 2020–2024 arası verilerle yapılmıştır.
+
+2025 Senaryo Bazlı Harcama Limiti Tahminleri
+Model 2025 için üç farklı senaryoda çalıştırılmıştır:
+
+İyimser Senaryo:
+
+Gelir: 800 milyon TL
+
+Gider: 600 milyon TL
+
+Sponsorluk: 140 milyon TL
+
+Transfer Geliri: 90 milyon TL
+
+Transfer Gideri: 50 milyon TL
+
+Borç: 200 milyon TL
+
+Sportif Başarı: 85
+
+Tahmini Harcama Limiti: 860 milyon TL
+
+Orta Senaryo:
+
+Gelir: 600 milyon TL
+
+Gider: 700 milyon TL
+
+Sponsorluk: 90 milyon TL
+
+Transfer Geliri: 50 milyon TL
+
+Transfer Gideri: 80 milyon TL
+
+Borç: 300 milyon TL
+
+Sportif Başarı: 70
+
+Tahmini Harcama Limiti: 540 milyon TL
+
+Kötümser Senaryo:
+
+Gelir: 450 milyon TL
+
+Gider: 850 milyon TL
+
+Sponsorluk: 50 milyon TL
+
+Transfer Geliri: 20 milyon TL
+
+Transfer Gideri: 100 milyon TL
+
+Borç: 500 milyon TL
+
+Sportif Başarı: 60
+
+Tahmini Harcama Limiti: 275 milyon TL
+
+Modelin Gerçekçilik Testi (2024 Geriye Dönük Tahmin)
+Modelin geçmiş veriler üzerindeki başarısını ölçmek için 2024 yılı verileriyle test yapılmıştır.
+
+Kulüp	Gerçek Limit (m TL)	Tahmin (m TL)	Hata (%)
+Galatasaray	455.5	455.5	0.0%
+Fenerbahçe	741.5	741.5	0.0%
+Beşiktaş	557.1	557.1	0.0%
+Trabzonspor	386.4	386.4	0.0%
+Başakşehir	366.9	366.9	0.0%
+Adana Demirspor	694.1	694.1	0.0%
+
+
+Sonuç ve Öneriler
+Harcama limitleri, kulüplerin finansal yapıları kadar sportif başarılarına da bağlıdır.
+
+Regresyon modeli ile harcama limitlerinin yaklaşık seviyeleri doğru şekilde tahmin edilebilmektedir.
+
+Senaryo analizleri, kulüplerin planlama süreçlerinde kullanılabilecek güçlü bir öngörü aracıdır.
+
